@@ -1803,7 +1803,8 @@ dump_val(VALUE obj, int depth, Out out) {
     int	type = rb_type(obj);
 
     if (MAX_DEPTH < depth) {
-	rb_raise(rb_eNoMemError, "Too deeply nested.\n");
+    	printf("crazy depth! %d\n", depth);
+	// rb_raise(rb_eNoMemError, "Too deeply nested.\n");
     }
     switch (type) {
     case T_NIL:		dump_nil(out);				break;
