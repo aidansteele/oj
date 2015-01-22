@@ -54,7 +54,7 @@
 // Extra padding at end of buffer.
 #define BUFFER_EXTRA 10
 
-#define MAX_DEPTH 1000
+#define MAX_DEPTH 10000
 
 typedef unsigned long	ulong;
 
